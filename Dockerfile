@@ -28,7 +28,7 @@ RUN npm install
 #RUN cd packages/skyplus-design-system-app && yarn build
 #RUN ls
 #RUN pwd
-RUN cd app && yarn build
+RUN cd app && npm build
 RUN ls
 RUN pwd
 
