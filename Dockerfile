@@ -19,7 +19,7 @@ COPY . /app/
 #COPY packages/skyplus-design-system-app/yarn.lock /app/packages/skyplus-design-system-app/
 
 RUN npm install 
-RUN npx lerna bootstrap 
+#RUN npx lerna bootstrap 
 
 # Build
 
