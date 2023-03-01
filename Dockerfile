@@ -1,4 +1,4 @@
-FROM node:0.2.0 AS builder
+FROM node:latest AS builder
 # Environment
 
 WORKDIR /app
