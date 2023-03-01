@@ -6,10 +6,11 @@ WORKDIR /app
 
 # Dependencies
 
-COPY package.json /app/
+COPY . /app/
+#COPY package.json /app/
 #COPY yarn.lock /app/
 #COPY lerna.json /app/
-COPY app.json /app/
+#COPY app.json /app/
 
 #COPY packages/addon/package.json /app/packages/addon/
 #COPY packages/addon/yarn.lock /app/packages/addon/
@@ -22,7 +23,7 @@ RUN npx lerna bootstrap
 
 # Build
 
-COPY . /app/
+
 #COPY packages/skyplus-design-system-app/dist packages/login/node_modules/skyplus-design-system-app/dist
 #RUN cd packages/skyplus-design-system-app && yarn build
 #RUN ls
