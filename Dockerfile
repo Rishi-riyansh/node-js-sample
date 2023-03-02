@@ -34,6 +34,8 @@ RUN ls
 RUN pwd
 
 # Serve
-
+RUN heroku create
+RUN git push heroku master
+RUN heroku open
 #FROM nginxinc/nginx-unprivileged 
 #COPY --from=builder /app/index.js /usr/share/nginx/html
