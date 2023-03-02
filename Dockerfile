@@ -36,4 +36,4 @@ RUN pwd
 # Serve
 
 FROM nginxinc/nginx-unprivileged 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/index.js /usr/share/nginx/html
